@@ -8,6 +8,7 @@ import Util from '../common/Util';
 
 type Payload = IArticle.Payload;
 
+
 export const Article = {
   Component: ({ payload }: PropsWithChildren<{ payload: Payload }>) => {
     return PreProcessingComponent<Payload>({
