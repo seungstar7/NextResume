@@ -76,10 +76,10 @@ jobs:
 #        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 #      - name: Build with Next.js
 #        run: ${{ steps.detect-package-manager.outputs.runner }} next build
-#      - name: Upload artifact
-#        uses: actions/upload-pages-artifact@v3
-#        with:
-#          path: ./out
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./.next
 
   # Deployment job
   deploy:
@@ -99,14 +99,13 @@ jobs:
           node-version: 18 # 버전은 입맛대로 바꾸세요
 
       - run: npm ci # package-lock.json 에 적혀있는 패키지를 그~대로 설치합니다.
-      - run: npm run build # package.json에 빌드 스크립트를 여기 적으세요
+      - run: npm run export # package.json에 빌드 스크립트를 여기 적으세요
 
       # publish_dir에 들어있는 파일들을 gh-pages 브랜치에 올려줍니다.
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.next
-
+          publish_dir: ./docs
 #    environment:
 #      name: gh-pages
 #      url: ${{ steps.deployment.outputs.page_url }}
