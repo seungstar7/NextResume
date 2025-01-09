@@ -21,7 +21,7 @@
   "homepage": "https://seungstar7.github.io/NextResume",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uyu423/resume-nextjs.git"
+    "url": "git+https://github.com/seungstar7/NextResume.git"
   },
   "keywords": [
     "resume",
