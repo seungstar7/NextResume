@@ -5,16 +5,16 @@ const education: IEducation.Payload = {
 
   list: [
     {
-      title: 'University of Open Source',
-      subTitle: 'PhD in System Engineering (Honorary)',
-      startedAt: '1991-03',
-      // endedAt: '2010-02',
+      title: '가톨릭대학교',
+      subTitle: '컴퓨터공학 / 정보시스템공학 복수 전공 학사 졸업',
+      startedAt: '2010-03',
+      endedAt: '2016-08',
     },
     {
-      title: 'Antarctica High School',
-      subTitle: 'Graduated',
-      startedAt: '1989-03',
-      endedAt: '1991-02',
+      title: '안동 경일고등학교',
+      subTitle: '자연계 졸업 (경상북도 안동시)',
+      startedAt: '2007-03',
+      endedAt: '2010-02',
     },
   ],
 };

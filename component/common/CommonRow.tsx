@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import { Row, Col } from 'reactstrap';
+import {Row, Col, Badge} from 'reactstrap';
 import { IRow } from './IRow';
 import { Style } from './Style';
 import { CommonDescription } from './CommonDescription';
@@ -21,22 +21,48 @@ export function CommonRows({
             <Col md={12}>
               <h4 style={Style.gray}>{left.title}</h4>
             </Col>
-            {left.subTitle ? <Col md={12}>{left.subTitle}</Col> : ''}
+            {left.subTitle && <Col md={12}>{left.subTitle}</Col>}
           </Row>
         </Col>
         <Col sm={12} md={9}>
-          {right.title ? <h4>{right.title}</h4> : ''}
-          {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
-          {right.descriptions ? (
-            <CommonDescription
-              descriptions={right.descriptions}
-              option={{ padding: isNeedDescriptionPadding }}
-            />
-          ) : (
-            ''
-          )}
+          {right.title && <h4>{right.title}</h4>}
+          {right.subTitle && <i style={Style.gray}>{right.subTitle}</i>}
+          {right.descriptions &&
+              <CommonDescription
+                  descriptions={right.descriptions}
+                  option={{padding: isNeedDescriptionPadding}}
+              />
+          }
+          {right.skillKeywords &&
+              <ul className="pt-2">
+                {createSkillKeywords(right.skillKeywords)}
+              </ul>
+          }
         </Col>
       </Row>
     </div>
   );
+
+  function createSkillKeywords(skillKeywords?: string[]) {
+    if (!skillKeywords) {
+      return null;
+    }
+    return (
+        <li>
+          <strong>Skill Keywords</strong>
+          <div>
+            {skillKeywords.map((keyword, index) => (
+                <Badge
+                    style={Style.skillKeywordBadge}
+                    key={index.toString()}
+                    color="secondary"
+                    className="mr-1"
+                >
+                  {keyword}
+                </Badge>
+            ))}
+          </div>
+        </li>
+    );
+  }
 }

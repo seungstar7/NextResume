@@ -1,139 +1,137 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const programmingLanguages: ISkill.Skill = {
-  category: 'Programming Languages',
+const backendLanguage: ISkill.Skill = {
+  category: 'Languages',
   items: [
     {
-      title: 'C',
-      level: 3,
+      title: 'Kotlin',
+      // level: 3,
     },
     {
-      title: 'Shell Scripting',
-      level: 3,
+      title: 'Java',
+      // level: 3,
     },
     {
-      title: 'Python',
-      level: 3,
+      title: 'TypeScript',
+      // level: 3,
     },
     {
-      title: 'Perl',
-      level: 2,
+      title: 'javascript',
+      // level: 2,
     },
     {
-      title: 'Golang',
-      level: 2,
-    },
-    {
-      title: 'Rust',
-      level: 1,
+      title: 'HTML/CSS',
+      // level: 2,
     },
   ],
 };
 
-const kernelDevelopment: ISkill.Skill = {
-  category: 'Kernel Development',
+const frameworkLib: ISkill.Skill = {
+  category: 'Fameworks & Libraries',
   items: [
     {
-      title: 'Kernel Programming',
-      level: 3,
+      title: 'Spring Boot',
+      // level: 3,
     },
     {
-      title: 'GNU Debugger',
-      level: 3,
+      title: 'Node.js',
+      // level: 3,
     },
     {
-      title: 'Memory Management',
-      level: 2,
+      title: 'Express.js',
+      // level: 3,
     },
     {
-      title: 'System Call Interface',
-      level: 2,
+      title: 'Nest.js',
+      // level: 2,
+    },
+    {
+      title: 'Next.js',
+      // level: 2,
+    },
+    {
+      title: 'React.js',
+      // level: 2,
+    },
+    {
+      title: 'CodeIgniter',
+      // level: 1,
+    },
+    {
+      title: 'Coroutine',
+      // level: 3,
     },
   ],
 };
 
-const virtualization: ISkill.Skill = {
-  category: 'Virtualization',
+const infraDb: ISkill.Skill = {
+  category: 'Infrastructure & Databases',
   items: [
+    {
+      title: 'AWS',
+    },
+    {
+      title: 'NCP',
+    },
+    {
+      title: 'Kubernetes',
+    },
     {
       title: 'Docker',
-      level: 3,
     },
     {
-      title: 'KVM',
-      level: 3,
+      title: 'nginx',
     },
     {
-      title: 'Xen',
-      level: 2,
+      title: 'Apache',
     },
     {
-      title: 'VirtualBox',
-      level: 2,
+      title: 'Kafka',
     },
     {
-      title: 'VMware ESXi',
-      level: 1,
+      title: 'MySQL',
+    },
+    {
+      title: 'Redis',
+    },
+    {
+      title: 'MongoDB',
+    },
+    {
+      title: 'Linux',
     },
   ],
 };
 
-const automation: ISkill.Skill = {
-  category: 'Automation',
+const toolIde: ISkill.Skill = {
+  category: 'Tools & IDEs',
   items: [
     {
-      title: 'Ansible',
-      level: 3,
+      title: 'Vim',
     },
     {
-      title: 'Puppet',
-      level: 3,
+      title: 'VS Code',
     },
     {
-      title: 'Chef',
-      level: 2,
+      title: 'IDEA',
+    },
+    {
+      title: 'Git',
+    },
+    {
+      title: 'Github',
+    },
+    {
+      title: 'Bitbucket',
     },
     {
       title: 'Jenkins',
-      level: 2,
     },
     {
-      title: 'CI/CD Pipelines',
-      level: 1,
+      title: 'Jira',
     },
     {
-      title: 'Infrastructure as Code',
-      level: 1,
-    },
-  ],
-};
-
-const networkSecurity: ISkill.Skill = {
-  category: 'Network Security',
-  items: [
-    {
-      title: 'iptables',
-      level: 3,
-    },
-    {
-      title: 'OpenSSH',
-      level: 3,
-    },
-    {
-      title: 'OpenSSL',
-      level: 2,
-    },
-    {
-      title: 'NACLs',
-      level: 2,
-    },
-    {
-      title: 'VPN Technologies',
-      level: 2,
-    },
-    {
-      title: 'Intrusion Detection',
-      level: 1,
+      title: 'Confluence',
     },
   ],
 };
@@ -142,37 +140,27 @@ const misc: ISkill.Skill = {
   category: 'Misc',
   items: [
     {
-      title: 'Coffee Brewing',
+      title: 'DevOps',
     },
     {
-      title: "Rubik's Cube Solving",
+      title: 'Agile',
     },
     {
-      title: 'Table Tennis',
+      title: 'HHKB',
     },
     {
-      title: 'Guitar Playing',
+      title: 'Drum',
     },
     {
-      title: 'Joke Telling',
-    },
-    {
-      title: 'Duct Tape Crafting',
+      title: 'Electric Guitar',
     },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [
-    programmingLanguages,
-    kernelDevelopment,
-    virtualization,
-    automation,
-    networkSecurity,
-    misc,
-  ],
-  tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
+  skills: [backendLanguage, frameworkLib, infraDb, toolIde, misc],
+  // tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
 
 export default skill;
