@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import {Row, Col, Badge} from 'reactstrap';
+import { Row, Col, Badge } from 'reactstrap';
 import { IRow } from './IRow';
 import { Style } from './Style';
 import { CommonDescription } from './CommonDescription';
@@ -27,17 +27,15 @@ export function CommonRows({
         <Col sm={12} md={9}>
           {right.title && <h4>{right.title}</h4>}
           {right.subTitle && <i style={Style.gray}>{right.subTitle}</i>}
-          {right.descriptions &&
-              <CommonDescription
-                  descriptions={right.descriptions}
-                  option={{padding: isNeedDescriptionPadding}}
-              />
-          }
-          {right.skillKeywords &&
-              <ul className="pt-2">
-                {createSkillKeywords(right.skillKeywords)}
-              </ul>
-          }
+          {right.descriptions && (
+            <CommonDescription
+              descriptions={right.descriptions}
+              option={{ padding: isNeedDescriptionPadding }}
+            />
+          )}
+          {right.skillKeywords && (
+            <ul className="pt-2">{createSkillKeywords(right.skillKeywords)}</ul>
+          )}
         </Col>
       </Row>
     </div>
@@ -48,21 +46,21 @@ export function CommonRows({
       return null;
     }
     return (
-        <li>
-          <strong>Skill Keywords</strong>
-          <div>
-            {skillKeywords.map((keyword, index) => (
-                <Badge
-                    style={Style.skillKeywordBadge}
-                    key={index.toString()}
-                    color="secondary"
-                    className="mr-1"
-                >
-                  {keyword}
-                </Badge>
-            ))}
-          </div>
-        </li>
+      <li>
+        <strong>Skill Keywords</strong>
+        <div>
+          {skillKeywords.map((keyword, idx) => (
+            <Badge
+              style={Style.skillKeywordBadge}
+              key={idx.toString()}
+              color="secondary"
+              className="mr-1"
+            >
+              {keyword}
+            </Badge>
+          ))}
+        </div>
+      </li>
     );
   }
 }

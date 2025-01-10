@@ -16,23 +16,23 @@ import { Skill } from '../component/skill';
 import { Style } from '../component/common/Style';
 import Payload from '../payload';
 import { Article } from '../component/article';
-import {
-    Animator,
-    batch,
-    Fade,
-    // FadeIn,
-    // MoveIn,
-    MoveOut,
-    ScrollContainer,
-    ScrollPage,
-    Sticky,
-    ZoomIn
-} from 'react-scroll-motion'
-import AnimatedComponent from "./AnimatedComponent";
+// todo : 애니메이션, 사이드바 구현
+// import {
+//     Animator,
+//     batch,
+//     Fade,
+//     // FadeIn,
+//     // MoveIn,
+//     MoveOut,
+//     ScrollContainer,
+//     ScrollPage,
+//     Sticky,
+//     ZoomIn
+// } from 'react-scroll-motion'
+// import AnimatedComponent from "./AnimatedComponent";
 // import { TOC } from '../component/toc';
 
-
-function Yosume() {
+function Resume() {
   return (
     <>
       <NextSeo {...Payload._global.seo} />
@@ -40,35 +40,33 @@ function Yosume() {
         <title>{Payload._global.headTitle}</title>
         <link rel="shortcut icon" href={Payload._global.favicon} />
       </Head>
-
-
       <Container style={Style.global}>
-          <ScrollContainer>
-              {/*todo : TOC 구현하기*/}
-              {/*<TOC.Component payload={Payload.project}/>*/}
-              <Profile.Component payload={Payload.profile}/>
-
-              <AnimatedComponent />
-              <Introduce.Component payload={Payload.introduce}/>
-              <ScrollPage>
-                  <Animator animation={batch(Sticky(), Fade(), ZoomIn(), MoveOut(0, 0))}>
-                      <Skill.Component payload={Payload.skill}/>
-                  </Animator>
-              </ScrollPage>
-
-              <Experience.Component payload={Payload.experience}/>
-              <Project.Component payload={Payload.project}/>
-              <OpenSource.Component payload={Payload.openSource}/>
-              <Presentation.Component payload={Payload.presentation}/>
-              <Article.Component payload={Payload.article}/>
-              <Education.Component payload={Payload.education}/>
-              <Etc.Component payload={Payload.etc}/>
-              <Footer.Component payload={Payload.footer}/>
-          </ScrollContainer>
+        <Profile.Component payload={Payload.profile} />
+        <Introduce.Component payload={Payload.introduce} />
+        <Skill.Component payload={Payload.skill} />
+        <Experience.Component payload={Payload.experience} />
+        <Project.Component payload={Payload.project} />
+        <OpenSource.Component payload={Payload.openSource} />
+        <Presentation.Component payload={Payload.presentation} />
+        <Article.Component payload={Payload.article} />
+        <Education.Component payload={Payload.education} />
+        <Etc.Component payload={Payload.etc} />
+        <Footer.Component payload={Payload.footer} />
+        {/* <ScrollContainer> */}
+        {/* todo : TOC 구현하기 */}
+        {/* <TOC.Component payload={Payload.project}/> */}
+        {/* todo : 움직임 구현하기 */}
+        {/* <AnimatedComponent /> */}
+        {/* <Introduce.Component payload={Payload.introduce}/> */}
+        {/* <ScrollPage> */}
+        {/*    <Animator animation={batch(Sticky(), Fade(), ZoomIn(), MoveOut(0, 0))}> */}
+        {/*        <Skill.Component payload={Payload.skill}/> */}
+        {/*    </Animator> */}
+        {/* </ScrollPage> */}
+        {/* </ScrollContainer> */}
       </Container>
-
     </>
   );
 }
 
-export default Yosume;
+export default Resume;

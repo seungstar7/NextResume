@@ -16,11 +16,11 @@ const nvHighlightEnhance: IProject.Item = {
   descriptions: [
     {
       content:
-          '라이브 방송에서 주요 장면을 자동 추출하여 다시보기 뷰어 하이라이트 목록과 네이버 쇼핑에서 숏클립 형태로 전시',
+        '라이브 방송에서 주요 장면을 자동 추출하여 다시보기 뷰어 하이라이트 목록과 네이버 쇼핑에서 숏클립 형태로 전시',
     },
     {
       content:
-          '내부 인프라와 네이버 CLOVA API를 사용하여 신규 하이라이트 생성 스펙을 충족하는 파이프라인 구축',
+        '내부 인프라와 네이버 CLOVA API를 사용하여 신규 하이라이트 생성 스펙을 충족하는 파이프라인 구축',
     },
     {
       content: '신규 추가된 키워드 하이라이트를 숏클립으로 생성하는 로직 구현',
@@ -82,7 +82,7 @@ const nvBroadcastClip: IProject.Item = {
     },
     {
       content:
-          '네이버 동영상 검색, 네이버 쇼핑 윈도/스마트스토어 상품상세 연관 라이브 방송 구간 노출',
+        '네이버 동영상 검색, 네이버 쇼핑 윈도/스마트스토어 상품상세 연관 라이브 방송 구간 노출',
     },
     { content: '사용자에게 구매 희망 상품의 정보를 영상으로 제공함에 따라 전환률, 구매율 상승' },
     { content: '해당 기능을 통해 일 평균 약 n회의 추가 인입 발생' },
@@ -128,11 +128,11 @@ const nvBroadcastBackend: IProject.Item = {
       descriptions: [
         {
           content:
-              'CPC에 효과적인 트레일러를 노출시키기 위해, 다시보기 영상에 실시간 방송 지표를 적용한 트레일러 추출 및 적용',
+            'CPC에 효과적인 트레일러를 노출시키기 위해, 다시보기 영상에 실시간 방송 지표를 적용한 트레일러 추출 및 적용',
         },
         {
           content:
-              '기존의 일차원적인 트레일러를 다양하게 제공할 수 있도록 서비스 설계 및 이벤트 파이프라인 구현',
+            '기존의 일차원적인 트레일러를 다양하게 제공할 수 있도록 서비스 설계 및 이벤트 파이프라인 구현',
         },
         {
           content: '개선 이후 다시보기 주요 영역 유입 약 x%, 최대 y%, 최소 z% 상승',
@@ -151,7 +151,7 @@ const yaNol2020Dlc: IProject.Item = {
     { content: '하단의 놀력 이벤트 기능에서 경품 당첨 기능을 추가한 고도화 개발' },
     {
       content:
-          '놀력 추첨 알고리즘, 경품 재고 관리, 당첨 정보 스토리징 및 스트리밍, Mashup API 구현',
+        '놀력 추첨 알고리즘, 경품 재고 관리, 당첨 정보 스토리징 및 스트리밍, Mashup API 구현',
     },
     { content: '단기 측정 기준 해당 프로젝트 성과로 DAU 의 n% 증가됨' },
   ],
@@ -168,11 +168,11 @@ const yaRedisDist: IProject.Item = {
     },
     {
       content:
-          '레거시 불필요 데이터 조사 및 청산으로 Storeage 사용량을 x% → y% 로 감소시켜 Disk Full Risk 해소',
+        '레거시 불필요 데이터 조사 및 청산으로 Storeage 사용량을 x% → y% 로 감소시켜 Disk Full Risk 해소',
     },
     {
       content:
-          'AWS ElastiCache 에서 제공하는 Redis Read Replica 활용가능 하도록 Redis 부하 분산 모듈 개발',
+        'AWS ElastiCache 에서 제공하는 Redis Read Replica 활용가능 하도록 Redis 부하 분산 모듈 개발',
     },
     { content: 'Application Level 의 Redis Transaction Logger 구현하여 디버그 용이성 증가' },
   ],
@@ -187,14 +187,14 @@ const yaNol2020: IProject.Item = {
     { content: '1년간 24시간 진행되는 무중단 이벤트 구현' },
     {
       content:
-          '비즈니스 요구사항 구체화 및 제약 사항 파악, 개발 방향성 수립, 포인트 지급 알고리즘 및 API 구현',
+        '비즈니스 요구사항 구체화 및 제약 사항 파악, 개발 방향성 수립, 포인트 지급 알고리즘 및 API 구현',
     },
     {
       content: 'Batch Worker 미 이벤트 지표 모니터링 도구, 비상용 관리자 CLI 기능 구현',
     },
     {
       content:
-          '2020년 6월 기준 MAU n%, DAU n% 향상 및 평균 구매 건수 n건 향상, 기존 목표치 대비 4배 달성',
+        '2020년 6월 기준 MAU n%, DAU n% 향상 및 평균 구매 건수 n건 향상, 기존 목표치 대비 4배 달성',
     },
     {
       content: "(관련기사) 야놀자 탁상용 달력 '2020 놀력' 출시",
@@ -231,7 +231,7 @@ const yaJoyAPI: IProject.Item = {
       descriptions: [
         {
           content:
-              'A/B 테스트 논의 및 클라이언트 제공 Mashup API 구현, 데이터 조직 제종 데이터 Aggregation 완료',
+            'A/B 테스트 논의 및 클라이언트 제공 Mashup API 구현, 데이터 조직 제종 데이터 Aggregation 완료',
         },
         { content: '실시간 인기도 메시지 노출로 구매 전환 및 화면 전환율 n% 상승' },
       ],
@@ -243,11 +243,11 @@ const yaJoyAPI: IProject.Item = {
         { content: '기존 국내 숙소/해외 숙소만 존재하던 야놀자 서비스에 국내 레저 찜 기능을 추가' },
         {
           content:
-              '해외 숙소 API 와 통합하여 하나의 API 에서 해외 숙소, 국내 레저 찜 기능을 모두 사용할 수 있는 Integration API 구현',
+            '해외 숙소 API 와 통합하여 하나의 API 에서 해외 숙소, 국내 레저 찜 기능을 모두 사용할 수 있는 Integration API 구현',
         },
         {
           content:
-              '국내 레저 찜 기능을 통한 주문 전환율 n% 증가 / 전체 주문 건수의 n% 가 국내 레저 찜 기능을 통해 구매',
+            '국내 레저 찜 기능을 통한 주문 전환율 n% 증가 / 전체 주문 건수의 n% 가 국내 레저 찜 기능을 통해 구매',
         },
       ],
     },
@@ -257,7 +257,7 @@ const yaJoyAPI: IProject.Item = {
       descriptions: [
         {
           content:
-              '기존 사용되던 쿠폰의 신규 제약조건을 노출 단계에 구현함으로써 오프라인 비즈니스 및 운영 조직 부담 감소',
+            '기존 사용되던 쿠폰의 신규 제약조건을 노출 단계에 구현함으로써 오프라인 비즈니스 및 운영 조직 부담 감소',
         },
       ],
     },
@@ -292,7 +292,7 @@ const yaJoyAPI: IProject.Item = {
         {
           content: '(참고자료) 야놀자가 레저를 판매하려고 할 때 벌어지는 일 (by 송요창님)',
           href:
-              'https://speakerdeck.com/totuworld/yanoljaga-rejeoreul-panmaeharyeogo-hal-ddae-beoleojineun-il',
+            'https://speakerdeck.com/totuworld/yanoljaga-rejeoreul-panmaeharyeogo-hal-ddae-beoleojineun-il',
         },
       ],
     },
@@ -418,7 +418,7 @@ const kyToto: IProject.Item = {
     { content: 'Wordpress, PHP, MySQL 등을 사용하여 서비스 개발' },
     {
       content:
-          '비즈니스 멘토링을 통해 BM 분석, 사업 전략 수립, 개발 방향성 수립 및 설계, 다른 직군과의 협업 등을 경험',
+        '비즈니스 멘토링을 통해 BM 분석, 사업 전략 수립, 개발 방향성 수립 및 설계, 다른 직군과의 협업 등을 경험',
     },
   ],
 };

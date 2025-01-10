@@ -67,7 +67,5 @@ export declare namespace IProfile {
      *
      * @description Bootstrap 4 의 Badge 로 표시하고 싶을 경우 true
      */
-
-
   }
 }

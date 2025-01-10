@@ -1,7 +1,7 @@
-import Toc from "./Toc";
-import {PropsWithChildren} from "react";
-import {PreProcessingComponent} from "../common/PreProcessingComponent";
-import {IProject} from "../project/IProject";
+import { PropsWithChildren } from 'react';
+import Toc from './Toc';
+import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import { IProject } from '../project/IProject';
 
 type Payload = IProject.Payload;
 
@@ -15,8 +15,5 @@ export const TOC = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
-  console.log(payload)
-  return (
-      <Toc content={'INTRODUCE'}/>
-  );
+  return <Toc content={payload.list[0].title} />;
 }
