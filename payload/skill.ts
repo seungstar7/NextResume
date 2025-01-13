@@ -4,11 +4,11 @@ const backendLanguage: ISkill.Skill = {
   category: 'Languages',
   items: [
     {
-      title: 'Kotlin',
+      title: 'Java',
       // level: 3,
     },
     {
-      title: 'Java',
+      title: 'Kotlin',
       // level: 3,
     },
     {
@@ -30,35 +30,43 @@ const frameworkLib: ISkill.Skill = {
   category: 'Fameworks & Libraries',
   items: [
     {
-      title: 'Spring Boot',
+      title: 'Spring',
       // level: 3,
-    },
-    {
-      title: 'Node.js',
-      // level: 3,
-    },
-    {
-      title: 'Express.js',
-      // level: 3,
-    },
-    {
-      title: 'Nest.js',
-      // level: 2,
-    },
-    {
-      title: 'Next.js',
-      // level: 2,
     },
     {
       title: 'React.js',
       // level: 2,
     },
     {
-      title: 'CodeIgniter',
-      // level: 1,
+      title: 'Node.js',
+      // level: 3,
     },
     {
-      title: 'Coroutine',
+      title: 'Spring Boot',
+      // level: 3,
+    },
+    {
+      title: 'Next.js',
+      // level: 3,
+    },
+    {
+      title: 'jQuery',
+      // level: 2,
+    },
+    {
+      title: 'jqGrid',
+      // level: 2,
+    },
+    {
+      title: 'webSquare',
+      // level: 2,
+    },
+    {
+      title: 'Vue.js',
+      // level: 2,
+    },
+    {
+      title: 'Express.js',
       // level: 3,
     },
   ],
@@ -68,13 +76,10 @@ const infraDb: ISkill.Skill = {
   category: 'Infrastructure & Databases',
   items: [
     {
-      title: 'AWS',
+      title: 'MySQL',
     },
     {
-      title: 'NCP',
-    },
-    {
-      title: 'Kubernetes',
+      title: 'MSSQL',
     },
     {
       title: 'Docker',
@@ -83,19 +88,10 @@ const infraDb: ISkill.Skill = {
       title: 'nginx',
     },
     {
+      title: 'Oracle DB',
+    },
+    {
       title: 'Apache',
-    },
-    {
-      title: 'Kafka',
-    },
-    {
-      title: 'MySQL',
-    },
-    {
-      title: 'Redis',
-    },
-    {
-      title: 'MongoDB',
     },
     {
       title: 'Linux',
@@ -107,14 +103,15 @@ const toolIde: ISkill.Skill = {
   category: 'Tools & IDEs',
   items: [
     {
-      title: 'Vim',
+      title: 'IDEA',
+    },
+    {
+      title: 'Eclipse',
     },
     {
       title: 'VS Code',
     },
-    {
-      title: 'IDEA',
-    },
+
     {
       title: 'Git',
     },
@@ -144,15 +141,6 @@ const misc: ISkill.Skill = {
     },
     {
       title: 'Agile',
-    },
-    {
-      title: 'HHKB',
-    },
-    {
-      title: 'Drum',
-    },
-    {
-      title: 'Electric Guitar',
     },
   ],
 };

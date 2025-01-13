@@ -1,178 +1,66 @@
 import { IExperience } from '../component/experience/IExperience';
 
-const naverNspa: IExperience.Position = {
-  title: 'Shopping Product NSPA 백엔드 개발자',
-  startedAt: '2024-02',
-  descriptions: ['Scheduled to be updated after December 2024'],
+const limeSI: IExperience.Position = {
+  title: 'SI 사업 개발',
+  startedAt: '2023-12',
+  descriptions: ['SK PS&M', '신세계 I&C', '롯데 이노베이트'],
   skillKeywords: [
     'Kotlin',
-    'Coroutine',
     'Java',
+    'javascript',
+    'Node.js',
+    'React',
+    'Next.js',
+    'TypeScript',
+    'Spring',
     'Spring Boot',
-    'MySQL',
-    'MongoDB',
-    'Redis',
+    'MSSQL',
+    'Oracle DB',
     'Kubernetes',
     'Docker',
-    'Kafka',
     'Jenkins',
   ],
 };
 
-const naverShoppinglive: IExperience.Position = {
-  title: 'Forest CIC 쇼핑라이브 백엔드 개발자',
-  startedAt: '2021-02',
-  endedAt: '2024-02',
+const limeEMR: IExperience.Position = {
+  title: '해외 사업 개발',
+  startedAt: '2023-05',
+  endedAt: '2023-12',
   descriptions: [
-    '네이버 비디오커머스 서비스(쇼핑라이브) 백엔드 개발',
-    '쇼핑라이브 라이브 방송 및 숏클립 서비스 제공을 위한 데이터 모델링 / API 개발',
-    '사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현',
-    '레거시 청산 및 기존 비즈니스 유지보수',
-    'MySQL / NoSQL 데이터베이스 유지보수 및 관리',
-    'Kafka 이벤트 핸들링 및 쇼핑라이브 데이터 실시간 통합',
-    'Kubernetes 기반 컨테이너 클러스터 유지보수 및 관리 ',
+    'MES(Manufacturing Execution System) 생산 관리 시스템 게발',
+    'Spring 환경 구축 및 공통 유틸 개발',
+    '레거시 청산 및 기존 비즈니스 로직 개선 작업',
+    '관리자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현',
+    '물류 관리 서비스 API 개발',
+    'MySQL 데이터베이스 유지보수 및 관리',
   ],
-  skillKeywords: [
-    'Java',
-    'Spring Boot',
-    'NCP',
-    'Kubernetes',
-    'Docker',
-    'MySQL',
-    'MongoDB',
-    'Redis',
-    'Kafka',
-    'Jenkins',
-  ],
+  skillKeywords: ['Java', 'Spring', 'jQuery', 'jqGrid', 'MySQL', 'webSquare'],
 };
 
-const naver: IExperience.Item = {
-  title: '네이버 (NAVER)',
-  positions: [naverNspa, naverShoppinglive],
+const limSmartFactory: IExperience.Position = {
+  title: '스마트 팩토리 사업 개발',
+  startedAt: '2022-02',
+  endedAt: '2023-09',
+  descriptions: [
+    'MES(Manufacturing Execution System) 생산 관리 시스템 게발',
+    'Spring 환경 구축 및 공통 유틸 개발',
+    '레거시 청산 및 기존 비즈니스 로직 개선 작업',
+    '관리자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현',
+    '물류 관리 서비스 API 개발',
+    'MySQL 데이터베이스 유지보수 및 관리',
+  ],
+  skillKeywords: ['Java', 'Spring', 'jQuery', 'jqGrid', 'MySQL', 'webSquare'],
 };
 
-const yanolja: IExperience.Item = {
-  title: '야놀자 (Yanolja)',
-  positions: [
-    {
-      title: 'R&D 그룹 CX 개발실 백엔드 개발자',
-      startedAt: '2018-02',
-      endedAt: '2021-02',
-      descriptions: [
-        '국내 및 글로벌 숙박/레저 OTA (800명~, R&D 200명~)',
-        '숙박/레저 정보 및 예약서비스 제공에 필요한 데이터 모델링 및 BFF API 개발 ',
-        '사용자 Needs 에 맞는 사용성 개선과 신규 비즈니스 로직 구현',
-        '레거시 청산 및 기존 비즈니스 로직 유지보수',
-        'AWS 인프라 및 NoSQL 데이터베이스 유지보수 및 관리',
-        'Agile Scrum/Sprint Planning Management',
-      ],
-      skillKeywords: [
-        'Node.js',
-        'TypeScript',
-        'Express.js',
-        'ElastiCache',
-        'ElasticBeanstalk',
-        'CloudWatch',
-        'Redis',
-        'Jenkins',
-        'BFF API',
-        'ISMS',
-        'Agile',
-        'A/B Test',
-      ],
-    },
-  ],
-};
-
-const plating: IExperience.Item = {
-  title: '플레이팅 (Plating)',
-  positions: [
-    {
-      title: '개발팀 백엔드 개발자',
-      startedAt: '2016-10',
-      endedAt: '2017-11',
-      descriptions: [
-        '요식업 / 푸드테크 스타트업 (15~50명, 개발팀 2~6명)',
-        'E-Commerce, 물류 백엔드, 인프라 개발 등',
-        'Development Project Management',
-      ],
-      skillKeywords: [
-        'Node.js',
-        'Express.js',
-        'PHP',
-        'Laravel',
-        'EC2',
-        'RDS',
-        'CloudFront',
-        'React.js',
-        'Redux',
-        'MySQL',
-        'MongoDB',
-        'Socket.io',
-        'nginx',
-        'Database Design',
-        'Architecture',
-        'DDD',
-        'TDD',
-      ],
-    },
-  ],
-};
-
-const ecubelabs: IExperience.Item = {
-  title: '이큐브랩 (Ecube Labs)',
-  positions: [
-    {
-      title: '소프트웨어 개발팀 서버 개발자',
-      startedAt: '2015-07',
-      endedAt: '2016-02',
-      descriptions: [
-        'IoT 하드웨어/소프트웨어 스타트업 (15~25, 개발팀 8~10명)',
-        "'도시 쓰레기량 관제 소프트웨어' 백엔드 개발",
-        '인프라 아키텍팅과 보안 담당',
-        'AWS, Agile 등 연구 / 도입',
-      ],
-      skillKeywords: [
-        'PHP',
-        'CodeIgniter',
-        'Cafe24',
-        'AWS',
-        'MySQL',
-        'Node.js',
-        'Express.js',
-        'Apache',
-        'Security',
-        'Infrastructure',
-        'Database Design',
-        'Architecture',
-      ],
-    },
-  ],
-};
-
-const kyny: IExperience.Item = {
-  title: '키니 (KYNY)',
-  positions: [
-    {
-      title: '웹 개발자',
-      startedAt: '2014-07',
-      endedAt: '2015-04',
-      descriptions: [
-        '가톨릭대학교 재학생 창업 지원 스타트업 (5명)',
-        "'스포츠 경기 승률 계산 알고리즘 서비스' 비즈니스 기획 및 개발",
-        'RDB Schema 모델링 및 백엔드 아키텍쳐, 서버 인프라 구축',
-        '자체 승률 계산 알고리즘 통한 Third Party 데이터 정제',
-        '클라이언트 사용 가능한 CRUD API 제공',
-      ],
-      skillKeywords: ['PHP', 'WordPress', 'Ubuntu Linux', 'Apache2', 'MySQL'],
-    },
-  ],
+const limeComp: IExperience.Item = {
+  title: '라임컴퍼니',
+  positions: [limeSI, limSmartFactory, limeEMR],
 };
 
 const experience: IExperience.Payload = {
   disable: false,
   disableTotalPeriod: false,
-  list: [naver, yanolja, plating, ecubelabs, kyny],
+  list: [limeComp],
 };
 
 export default experience;
