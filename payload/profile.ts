@@ -13,7 +13,7 @@ const profile: IProfile.Payload = {
   image,
   name: {
     title: 'Kim Seung Hyun',
-    small: '(승짱)',
+    small: '(김승현)',
   },
   contact: [
     {
@@ -22,8 +22,8 @@ const profile: IProfile.Payload = {
       icon: faEnvelope,
     },
     {
-      title: '연락주세요',
-      link: '010-4203-2996',
+      title: '010-4203-2996',
+      link: 'tel:010-4203-2996',
       icon: faPhone,
       // badge: true,
     },
