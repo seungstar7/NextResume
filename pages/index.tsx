@@ -19,6 +19,7 @@ import { Skill } from '../component/skill';
 import { Style } from '../component/common/Style';
 import Payload from '../payload';
 import { Article } from '../component/article';
+import { Portfolio } from '../component/portfolio';
 // import mc from '../asset/module.css';
 
 // todo : 애니메이션, 사이드바 구현
@@ -93,6 +94,7 @@ function Resume() {
           <Project.Component payload={Payload.project} />
           <OpenSource.Component payload={Payload.openSource} />
           <Presentation.Component payload={Payload.presentation} />
+          <Portfolio.Component payload={Payload.portfolio} />
           <Article.Component payload={Payload.article} />
           <Education.Component payload={Payload.education} />
           <Etc.Component payload={Payload.etc} />

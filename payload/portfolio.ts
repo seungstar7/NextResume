@@ -1,6 +1,6 @@
-import { IOpenSource } from '../component/openSource/IOpenSource';
+import { IPortfolio } from '../component/portfolio/IPortfolio';
 
-const openSource: IOpenSource.Payload = {
+const Portfolio: IPortfolio.Payload = {
   disable: false,
   list: [
     {
@@ -71,4 +71,4 @@ const openSource: IOpenSource.Payload = {
   ],
 };
 
-export default openSource;
+export default Portfolio;
