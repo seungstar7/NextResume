@@ -4,36 +4,49 @@ const Portfolio: IPortfolio.Payload = {
   disable: false,
   list: [
     {
-      title: 'Linux Kernal',
+      title: 'Wedding-Card (청첩장)',
       descriptions: [
         {
-          content: 'Regular contributor to kernel patches.',
+          content: '2024-04 결혼 초대 목적 청첩장 개발',
         },
         {
-          content: 'Active member of kernel security audit team.',
+          content: 'Feature',
+          descriptions: [
+            { content: '이미지 사진 출력' },
+            { content: '스크롤 애니메이션 시각화' },
+            { content: '카카오 연동 (지도, 알림톡)' },
+          ],
+        },
+        {
+          content: 'https://seungstar7.github.io/React_WeddingCard',
+          href: 'https://seungstar7.github.io/React_WeddingCard',
         },
       ],
     },
     {
-      title: 'GNOME',
+      title: 'React Games',
       descriptions: [
         {
-          content: 'Contributor to UX improvements for system utilities.',
+          content: '렌더링을 활용한 React 게임 개발',
         },
         {
-          content: 'https://github.com/GNOME',
-          href: 'https://github.com/GNOME',
+          content: 'Games',
+          descriptions: [{ content: 'Snake Game' }, { content: '맞고' }],
+        },
+        {
+          content: 'https://seungstar7.github.io/React_Games/',
+          href: 'https://seungstar7.github.io/React_Games/',
         },
       ],
     },
     {
-      title: 'node',
+      title: '채팅 Web Application',
       descriptions: [
-        { content: 'Node.js JavaScript runtime' },
-        { content: 'Contributor' },
+        { content: '범용성 웹 어플리케이션으로 채팅' },
+        { content: 'Express.js 로 백엔드 Interface 개발' },
         {
-          content: 'https://github.com/nodejs/node',
-          href: 'https://github.com/nodejs/node',
+          content: 'https://github.com/seungstar7/chatReact',
+          href: 'https://github.com/seungstar7/chatReact',
         },
         {
           content: 'Github Stars: ',
@@ -42,25 +55,17 @@ const Portfolio: IPortfolio.Payload = {
       ],
     },
     {
-      title: 'NestJS',
+      title: 'Kotlin Spring API',
       descriptions: [
         {
-          content: 'A progressive Node.js framework',
-        },
-        {
-          content:
-            'for building efficient, scalable, and enterprise-grade server-side applications',
+          content: 'Spring Backend API 기본 환경 구성',
         },
         {
           content: 'Contributor',
         },
         {
-          content: 'https://github.com/nestjs/nest',
-          href: 'https://github.com/nestjs/nest',
-        },
-        {
-          content: 'Monthly Download: ',
-          postImage: 'https://img.shields.io/npm/dm/@nestjs/core.svg',
+          content: 'https://github.com/seungstar7/KotlinSpringAPI',
+          href: 'https://github.com/seungstar7/KotlinSpringAPI',
         },
         {
           content: 'Github Stars: ',

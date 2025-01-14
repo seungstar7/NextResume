@@ -89,9 +89,9 @@ function Resume() {
           {/* </div> */}
           <Profile.Component payload={Payload.profile} />
           <Introduce.Component payload={Payload.introduce} />
+          <Project.Component payload={Payload.project} />
           <Skill.Component payload={Payload.skill} />
           <Experience.Component payload={Payload.experience} />
-          <Project.Component payload={Payload.project} />
           <OpenSource.Component payload={Payload.openSource} />
           <Presentation.Component payload={Payload.presentation} />
           <Portfolio.Component payload={Payload.portfolio} />

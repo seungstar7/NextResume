@@ -4,7 +4,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { IProfile } from '../component/profile/IProfile';
-import image from '../asset/sample_tux.png';
+import image from '../asset/profile_img.jpg';
 
 const profile: IProfile.Payload = {
   disable: false,
@@ -37,7 +37,8 @@ const profile: IProfile.Payload = {
     // },
   ],
   notice: {
-    title: '휴대전화나 페이스북 메시지 아닌 이메일로 연락 부탁드립니다.',
+    title:
+      '개발에 있어 현실의 벽과 타협은 없습니다. 끊임없이 고민하고 Best 가 되더라도 Better 를 늘 고민하는 개발자',
     icon: faBell,
   },
 };
