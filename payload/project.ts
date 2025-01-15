@@ -97,6 +97,7 @@ const sk: IProject.Item = {
   startedAt: '2023-10',
   endedAt: '2024-05',
   where: WHERE.SK,
+  skillKeywords: ['kotlin', 'React', 'JPA'],
   descriptions: [
     {
       content: 'Kotlin Spring 백엔드 API 구현',

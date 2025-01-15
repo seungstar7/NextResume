@@ -50,6 +50,10 @@ const frameworkLib: ISkill.Skill = {
       // level: 3,
     },
     {
+      title: 'JPA',
+      // level: 2,
+    },
+    {
       title: 'jQuery',
       // level: 2,
     },

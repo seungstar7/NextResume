@@ -32,7 +32,15 @@ const limeEMR: IExperience.Position = {
     '해회 현지 시스템에 맞는 요구 사항에 따른 신규 비즈니스 로직 구현',
     'BSB 글로벌 포털사이트 개발',
   ],
-  skillKeywords: ['Java', 'Spring Boot', 'react.js', 'node.js', 'myBatis Generator', 'linux'],
+  skillKeywords: [
+    'Java',
+    'Spring Boot',
+    'react.js',
+    'JPA',
+    'node.js',
+    'myBatis Generator',
+    'linux',
+  ],
 };
 
 const limSmartFactory: IExperience.Position = {
